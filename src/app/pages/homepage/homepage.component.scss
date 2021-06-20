@@ -1,0 +1,26 @@
+.homepage-card{
+    width: 80%;
+    height: 90%;
+}
+
+.homepage-card-img-text-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+button:hover {
+    background-color: white;
+    color: #F87171;
+}
+
+button:focus{
+    outline: none;
+}
+
+@media (min-width: 1000px) { 
+    .homepage-card-img-text-container{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+ }
