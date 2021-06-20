@@ -8,12 +8,14 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
 import { MatIconModule } from "@angular/material/icon";
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    HomepageComponent
+    HomepageComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,
