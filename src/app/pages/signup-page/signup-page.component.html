@@ -1,1 +1,34 @@
-<p>signup-page works!</p>
+<section>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+        <mat-label>pseudo</mat-label>
+        <input type="pseudo" matInput formControlName="pseudo" 
+                placeholder="Patouche">
+        <div *ngIf="signupForm.controls['pseudo'].hasError('required')  && signupForm.controls['pseudo'].touched ">
+            pseudo is <strong>required</strong>
+        </div>
+        </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" 
+                placeholder="Ex. pat@example.com">
+        <div *ngIf="signupForm.controls['email'].hasError('email') && !signupForm.controls['email'].hasError('required')">
+            Please enter a valid email address
+        </div>
+        <div *ngIf="signupForm.controls['email'].hasError('required') && signupForm.controls['email'].touched ">
+            Email is <strong>required</strong>
+        </div>
+    </mat-form-field>
+        <mat-form-field class="example-full-width">
+        <mat-label>Mot de passe</mat-label>
+        <input type="password" matInput formControlName="password" >
+        <div *ngIf="signupForm.controls['password'].hasError('password') && !signupForm.controls['password'].hasError('required')">
+            Please enter a valid password address
+        </div>
+        <div *ngIf="signupForm.controls['password'].hasError('required') && signupForm.controls['password'].touched ">
+            password is <strong>required</strong>
+        </div>
+    </mat-form-field>
+    <button type="submit" [disabled]="!signupForm.valid">Valider</button>
+    </form>
+</section>
