@@ -1,3 +1,20 @@
+# EASYLISTAPP
+
+### Objectif : travailler avec Angular12 et Tailwindcss.
+### Application pour créer des listes d'objets afin de faciliter l'offre de cadeaux. 
+### Exemples de fonctionnalités à développer :
+- Création et récupération d'un user
+- Création d'une bibliothèque de listes
+- Création d'une liste
+- Créer/trouver et rejoindre des évènements
+- ...
+
+### Personal project - EasyListApp - Front - June 2021 
+
+
+-------------
+
+
 # EasyListApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
