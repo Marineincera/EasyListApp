@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators, FormGroup } from '@angular/forms';
+import { User } from 'src/app/shared/models/user';
+import { UserService } from 'src/app/shared/services/user.service';
 import { passwordValidator } from './password-validator';
 
 
@@ -24,7 +26,7 @@ export class SignupPageComponent implements OnInit {
     ])
 });
 
-  constructor() { }
+  constructor(private userService:UserService) { }
   
 
   ngOnInit(): void {
@@ -36,8 +38,10 @@ export class SignupPageComponent implements OnInit {
       email : this.signupForm.value.email,
       password : this.signupForm.value.password
     }
-    console.log(userToSignup);
-    return userToSignup;
+    this.userService.login(userToSignup.pseudo,userToSignup.email,userToSignup.password).subscribe((data: User) => {
+      console.log(data)
+    })
+      
   }
 
 }
