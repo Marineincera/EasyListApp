@@ -24,9 +24,8 @@ export class SignupPageComponent implements OnInit {
     ])
 });
 
-
-
   constructor() { }
+  
 
   ngOnInit(): void {
   }
