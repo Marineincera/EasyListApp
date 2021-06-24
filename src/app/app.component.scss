@@ -1,8 +1,50 @@
+
+:host {
+    --main-color: #F87171;
+  }
+
 .app-container{
-    background-color:#F87171;
+    background-color: var(--main-color, #F87171);
 }
+
 
 .body-card{
     width: 80%;
     height: 90%;
+}
+
+
+
+button:hover {
+    background-color: white;
+    color: var(--main-color, #F87171);
+}
+
+button:focus{
+    outline: none;
+}
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: var(--main-color, #F87171) !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: var(--main-color, #F87171) !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: var(--main-color, #F87171) !important;;
+  }
+
+@media (min-width: 1000px) { 
+    .form{
+        width: 30%;
+    }
+    .form-field-container{
+        width: 100%;
+    }
 }

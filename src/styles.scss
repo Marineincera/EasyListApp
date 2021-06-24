@@ -5,3 +5,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+button:hover {
+    background-color: white;
+    color: var(--main-color, #F87171);
+}
+
+button:focus{
+    outline: none;
+}
