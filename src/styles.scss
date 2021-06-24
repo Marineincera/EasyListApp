@@ -15,3 +15,16 @@ button:hover {
 button:focus{
     outline: none;
 }
+
+@media (min-width: 800px) { 
+    .form{
+        width: 30%;
+    }
+    .form-field-container{
+        width: 100%;
+    }
+
+    .form-field{
+        width: 100%;
+    }
+}

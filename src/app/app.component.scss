@@ -14,17 +14,6 @@
 }
 
 
-
-button:hover {
-    background-color: white;
-    color: var(--main-color, #F87171);
-}
-
-button:focus{
-    outline: none;
-}
-
-
 ::ng-deep .mat-focused .mat-form-field-label {
     /*change color of label*/
     color: var(--main-color, #F87171) !important;
@@ -40,11 +29,3 @@ button:focus{
    background-color: var(--main-color, #F87171) !important;;
   }
 
-@media (min-width: 1000px) { 
-    .form{
-        width: 30%;
-    }
-    .form-field-container{
-        width: 100%;
-    }
-}
