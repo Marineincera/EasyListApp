@@ -36,6 +36,6 @@
             <p class="text-red-400">Le mot de passe est obligatoire</p>
         </div>
     </div>
-    <button type="submit" [disabled]="!signupForm.valid" class="w-full my-2 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Valider</button>
+    <button *ngIf="signupForm.valid" type="submit" class="w-full my-2 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Valider</button>
     </form>
 </section>
